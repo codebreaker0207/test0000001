@@ -16,6 +16,15 @@
             color: white;
             padding: 1rem 0;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
         nav {
             background: #f4f4f4;
@@ -33,41 +42,69 @@
         main {
             padding: 1rem;
         }
+        section {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        section img {
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 1rem;
+        }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 1rem 0;
-            margin-top: 1rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
 <body>
+    <audio controls>
+        <source src="sing.MP3" type="audio/mpeg">
+        해당 브라우저는 오디오 재생을 지원하지 않습니다.
+    </audio>
+
     <header>
-        <h1>환영합니다!</h1>
-        <p>HTML로 만든 예제 웹 페이지</p>
+        <img src="dadjokes.webp" alt="아재개그 이미지">
+        <div>
+            <h1>환영합니다!</h1>
+            <p>여러분들의 농담 실력을 존중하는 사이트</p>
+        </div>
     </header>
     <nav>
-        <a href="#">홈</a>
-        <a href="#">소개</a>
-        <a href="#">연락처</a>
+        <a href="#">단어개그</a>
+        <a href="#">문장개그</a>
+        <a href="#">설명개그</a>
     </nav>
     <main>
+        <!-- 이미지와 추가 텍스트 -->
         <section>
-            <h2>HTML 소개</h2>
-            <p>HTML은 HyperText Markup Language의 약자로, 웹 페이지를 작성하기 위한 기본 언어입니다.</p>
+            <img src="qs.PNG" alt="PS 이미지">
+            <div>
+                <p>1. 말이 부정적이면?</p>
+                <p>2. 아몬드가 죽으면?</p>
+            </div>
+        </section>
+        <!-- 아래 내용들을 맨 아래로 이동 -->
+        <section>
+            <div>
+                <h2>아재개그 소개</h2>
+                <p>아재개그는 아재만 하는게 아닌 남녀노소 다할 수 있는 개그입니다.</p>
+            </div>
         </section>
         <section>
-            <h2>HTML의 장점</h2>
+            <h2>아재개그의 장점</h2>
             <ul>
-                <li>쉽고 간단하게 배우기 좋다</li>
-                <li>웹 페이지의 구조를 설계할 수 있다</li>
-                <li>CSS 및 JavaScript와 연동하여 동적인 콘텐츠를 만들 수 있다</li>
+                <li>아재개그를 할때:</li>
+                <li>어떤 반응을 보여도 우린 행복하다</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>© 2025 HTML 예제 페이지</p>
+        <p>ⓒ2025 azegaege 페이지</p>
     </footer>
 </body>
 </html>
